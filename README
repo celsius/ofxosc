@@ -1,0 +1,24 @@
+this is a bunch of files directly extracted from openFrameworks' plugin ofxosc
+
+I couldn't manage to get it compile properly inside of oF, so I created this small cmake-based setting that compiles it just fine on linux (ubuntu 10.04 x64).
+
+to compile:
+
+1. have openframeworks compiled and installed (without the ofxosc plugin, that's the whole point).
+2. do the standard cmake compilation stuffs:
+
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+
+you can set the path to oF either with:
+
+$ cmake .. -DOF_ROOT_PATH=/opt/openframeworks
+
+or using ccmake
+
+$ ccmake .
+
+and configure it
+
