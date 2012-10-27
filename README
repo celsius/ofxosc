@@ -1,8 +1,16 @@
+== what ? ==
+
 this is a bunch of files directly extracted from openFrameworks' plugin ofxosc
 
-I couldn't manage to get it compile properly inside of oF, so I created this small cmake-based setting that compiles it just fine on linux (ubuntu 10.04 x64).
+It is distributed with the same license as openFrameworks which is distributed under the MIT License.
 
-to compile:
+== why ? ==
+
+We need openFrameworks with OSC for one of the apps distributed with MAGE (http://mage.numediart.org)
+
+ofxosc would not compile properly inside of oF (for ubuntu 10.04 x64. OSX version is just doing fine, no need for this). Now this small cmake-based setting compiles it just fine on linux.
+
+== How ? ==
 
 1. have openframeworks compiled and installed (without the ofxosc plugin, that's the whole point).
 2. do the standard cmake compilation stuffs:
@@ -20,5 +28,5 @@ or using ccmake
 
 $ ccmake .
 
-and configure it
+and configure inside the ccmake UI.
 
